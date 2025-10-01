@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Attendance Tracker</title>
+</head>
+<body>
+    <h2>Mark Attendance</h2>
+    <form action="/submit" method="post">
+        <label>Student Name:</label>
+        <select name="student_name">
+            <option value="Ravi">Ravi</option>
+            <option value="Priya">Priya</option>
+            <option value="Arjun">Arjun</option>
+        </select><br><br>
+
+        <label>Attendance:</label>
+        <select name="status">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
