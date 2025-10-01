@@ -31,6 +31,7 @@ def submit():
     student_name = request.form['student_name']
     status = request.form['status']
     parent_phone = get_parent_phone(student_name)
+    
 
     if status == 'Absent' and parent_phone:
         message = f"Dear Parent, your child {student_name} was absent today."
@@ -57,3 +58,4 @@ def home():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))  # Use Render's port or default to 5000
     app.run(host='0.0.0.0', port=port)
+    "Fix port binding for Render"
